@@ -86,7 +86,7 @@ class ProductController extends Controller
         ]);
         //create a new Product
         $product->update($request->all());
-        //redirect and send mess
+        //redirect and send message
         return redirect()->route('products.index')->withInput()->with('success', 'Product is created successfully');
     }
 
